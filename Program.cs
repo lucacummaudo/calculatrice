@@ -47,8 +47,9 @@ namespace Calculatrice
                         isOpIncorrect = true;
                         break;
                     case "+":
-                        Outils.Addition(dblValeur1, dblValeur2);
-                        dblReponse = 0;
+                        dblReponse =  Outils.Addition(dblValeur1, dblValeur2);
+                        Console.Write(dblReponse.ToString());
+                        Console.ReadLine();
                         break;
                     case "-":
                         dblReponse = 0;
@@ -65,7 +66,7 @@ namespace Calculatrice
 
                 }
             }
-            Console.Write(dblValeur1.ToString());
+            
             Console.ReadKey();
         }
     }
