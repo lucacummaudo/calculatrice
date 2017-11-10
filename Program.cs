@@ -36,7 +36,6 @@ namespace Calculatrice
             while (isOpIncorrect)
             {
 
-            
                 string StrOp = Console.ReadLine();
                 isOpIncorrect = false;
                 switch (StrOp)
@@ -52,7 +51,9 @@ namespace Calculatrice
                         Console.ReadLine();
                         break;
                     case "-":
-                        dblReponse = 0;
+                        dblReponse = Outils.Soustraction(dblValeur1, dblValeur2);
+                        Console.Write(dblReponse.ToString());
+                        Console.ReadLine();
                         break;
                     case "*":
                         dblReponse = 0;
